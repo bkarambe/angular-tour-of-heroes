@@ -1,11 +1,15 @@
-<div *ngIf="hero">
-  <h2>{{hero.name}} details!</h2>
-  <div>
+<div style="display: inline-flex;">
+	<my-hero-search></my-hero-search>
+</div>
+
+<div *ngIf="hero" style="display: inline-block; float: right;">
+  <h2>{{hero['Display Name']}} details!</h2>
+  <!-- <div>
     <label>id: </label>{{hero.id}}</div>
   <div>
     <label>name: </label>
     <input [(ngModel)]="hero.name" placeholder="name" />
   </div>
   <button (click)="goBack()">Back</button>
-  <button (click)="save()">Save</button>
+  <button (click)="save()">Save</button> -->
 </div>
